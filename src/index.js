@@ -1,17 +1,19 @@
-import { BrowserRouter, Routes } from "react-router-dom";
+
 import React from "react";
 import ReactDOM from "react-dom";
 import "./assets/css/reset.css"
 import "./assets/css/style.css"
+import Main from "./components/Main/Main";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 function App (){
     return (
-        <BrowserRouter>
-            <Routes>
-                {/* <Route path="/" element={} />
-                <Route path="/" element={} /> */}
-            </Routes> 
-        </BrowserRouter>
+        <>
+            <Header />
+            <Main />
+            <Footer />
+        </>
     );
 };
 

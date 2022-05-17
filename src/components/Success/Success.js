@@ -3,7 +3,7 @@ import "./style.css"
 export default function Success(){
     return(
         <section>
-            <h3>Pedido feito com sucesso!</h3>
+            <h6>Pedido feito com sucesso!</h6>
             <article>
                 <h4>Filme e sessão</h4>
                 <span>Enola Holmes <br/>24/06/2021 15:00</span>
@@ -16,7 +16,9 @@ export default function Success(){
                 <h4>Comprador</h4>
                 <span>Nome: João da Silva Sauro<br/>CPF: 123.456.789-10</span>
             </article>
-            <button>Voltar pra Home</button>
+            <article className="centerBtn">
+                <button className="btnSuccess">Voltar pra Home</button>
+            </article>
         </section>
     );
 };
