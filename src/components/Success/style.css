@@ -41,6 +41,9 @@ h4{
     border: none;
     margin-top: 60px;
 }
+.ticket{
+    animation: flipInX 1s;
+}
 .centerBtn{
     display: flex;
     align-items: center;

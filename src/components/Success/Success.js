@@ -4,7 +4,7 @@ export default function Success(){
     return(
         <section className="success">
             <h6>Pedido feito com sucesso!</h6>
-            <section>
+            <section className="ticket">
                 <article>
                     <h4>Filme e sessão</h4>
                     <span>Enola Holmes <br/>24/06/2021 15:00</span>

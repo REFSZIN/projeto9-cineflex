@@ -24,6 +24,7 @@ footer{
     border-radius: 3px;
     width: 64px;
     height: 89px;
+    animation: fadeInLeft 1s;
 }
 h3{
     font-family: 'Roboto';
@@ -34,6 +35,8 @@ h3{
     display: flex;
     align-items: center;
     color: #293845;
+    animation: fadeIn 1s;
+
 }
 .footerHour, .footerSeats{
     display: flex;
@@ -41,4 +44,5 @@ h3{
 .tumbFooter{
     width: 48px;
     height: 72px;
+    
 }

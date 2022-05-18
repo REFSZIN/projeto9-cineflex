@@ -4,7 +4,7 @@ export default function FooterSeats (){
     return(
         <footer>
             <section className="footerSeats">
-                <figure className="backTumb">
+                <figure className="backTumbSeat">
                     <img className="tumbFooter"  src={tumb1} alt="Thumbnail"/>
                 </figure>
                 <h3>Enola Holmes <br/>Quinta-feira - 15:00 </h3>

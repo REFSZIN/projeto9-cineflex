@@ -25,6 +25,7 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+    animation: pulse 1s;
 }
 .Hour{
     display: flex;

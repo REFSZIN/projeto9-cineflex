@@ -17,4 +17,5 @@ h1{
     align-items: center;
     text-align: center;
     color: #E8833A;
+    animation: backInDown 1s;
 }

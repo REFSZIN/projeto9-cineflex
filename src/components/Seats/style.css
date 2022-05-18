@@ -19,7 +19,7 @@ h5{
 }
 input{
     width: 300px;
-    height: 51px;
+    height: 45px;
     background: #FFFFFF;
     border: 1px solid #D5D5D5;
     border-radius: 3px;
@@ -61,7 +61,7 @@ input::placeholder{
     align-content: center;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .listTypeSeats > figure{
     display: flex;
@@ -94,6 +94,7 @@ figcaption{
     padding-right: 2px;
     margin-bottom: 10px;
     margin-left: 10px;
+    animation: slideInDown 1s;
 }
 .seatBtnDispo{
     height: 20px;
@@ -164,4 +165,19 @@ figcaption{
     align-content: center;
     justify-content: center;
     align-items: center;
+    padding-bottom: 130px;
+}
+.seats > h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #293845;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
