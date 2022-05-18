@@ -25,6 +25,7 @@ footer{
     width: 64px;
     height: 89px;
     animation: fadeInLeft 1s;
+    box-shadow: 1px 2px 5px 5px #aaaaaa;
 }
 h3{
     font-family: 'Roboto';
