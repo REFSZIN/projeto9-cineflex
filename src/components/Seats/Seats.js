@@ -1,5 +1,5 @@
 import "./style.css"
-
+import { Link } from "react-router-dom"
 export default function Seats(){
     return (
         <section className="seats">
@@ -41,7 +41,7 @@ export default function Seats(){
                 <input type="text" placeholder="Digite seu CPF..."/>
             </article>
             <article className="centerBtn">
-                <button className="btnAside">Reservar assento(s)</button>
+                <Link to='/pedido'><button className="btnAside">Reservar assento(s)</button></Link>
             </article>
         </section>
     )

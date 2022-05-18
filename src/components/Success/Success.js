@@ -1,8 +1,8 @@
 import "./style.css"
-
+import { Link } from "react-router-dom";
 export default function Success(){
     return(
-        <section>
+        <section className="success">
             <h6>Pedido feito com sucesso!</h6>
             <article>
                 <h4>Filme e sessão</h4>
@@ -16,9 +16,9 @@ export default function Success(){
                 <h4>Comprador</h4>
                 <span>Nome: João da Silva Sauro<br/>CPF: 123.456.789-10</span>
             </article>
-            <article className="centerBtn">
-                <button className="btnSuccess">Voltar pra Home</button>
-            </article>
+            <div className="centerBtn">
+                <Link to='/'> <button className="btnSuccess">Voltar pra Home</button> </Link>
+            </div>
         </section>
     );
 };

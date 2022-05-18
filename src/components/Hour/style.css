@@ -19,6 +19,20 @@
     height: 80px;
     margin-bottom: 18px;
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.Hour{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 .date{
     font-family: 'Roboto';
