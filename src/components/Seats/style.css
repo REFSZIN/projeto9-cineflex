@@ -1,11 +1,11 @@
 .listSeats{
+    width: 320px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
     justify-content: center;
     align-items: center;
-    width: 74%;
 }
 h5{
     font-family: 'Roboto';
@@ -18,7 +18,7 @@ h5{
     color: #293845;
 }
 input{
-    width: 327px;
+    width: 300px;
     height: 51px;
     background: #FFFFFF;
     border: 1px solid #D5D5D5;
@@ -51,9 +51,10 @@ input::placeholder{
     letter-spacing: 0.04em;
     color: #FFFFFF;
     border: none;
+    margin-top: 40px;
 }
 .listTypeSeats{
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -75,28 +76,28 @@ figcaption{
     margin-left: 10px;
 }
 .seatBtn{
-    height: 30px;
-    width: 30px;
+    height: 22px;
+    width: 22px;
     background: #C3CFD9;
     border: 1px solid #808F9D;
     border-radius: 100%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 9px;
     line-height: 13px;
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
     color: #000000;
-    padding-right: 7px;
+    padding-right: 2px;
     margin-bottom: 10px;
     margin-left: 10px;
 }
 .seatBtnDispo{
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     background: #C3CFD9;
     border: 1px solid #808F9D;
     border-radius: 100%;
@@ -115,8 +116,8 @@ figcaption{
     margin-left: 10px;
 }
 .seatBtnIndispo{
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     background: #FBE192;
     border: 1px solid #F7C52B;
     border-radius: 17px;
@@ -136,8 +137,8 @@ figcaption{
     margin-left: 10px;
 }
 .seatBtnSelect{
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     background: #8DD7CF;
     border: 1px solid #1AAE9E;
     border-radius: 17px;

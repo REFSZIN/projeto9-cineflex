@@ -15,10 +15,46 @@ export default function Seats(){
                 <button className="seatBtn">08</button>
                 <button className="seatBtn">09</button>
                 <button className="seatBtn">10</button>
-                <button className="seatBtn">11</button>
-                <button className="seatBtn">12</button>
-                <button className="seatBtn">13</button>
-                <button className="seatBtn">14</button>
+                <button className="seatBtn">01</button>
+                <button className="seatBtn">02</button>
+                <button className="seatBtn">03</button>
+                <button className="seatBtn">04</button>
+                <button className="seatBtn">05</button>
+                <button className="seatBtn">06</button>
+                <button className="seatBtn">07</button>
+                <button className="seatBtn">08</button>
+                <button className="seatBtn">09</button>
+                <button className="seatBtn">10</button>
+                <button className="seatBtn">01</button>
+                <button className="seatBtn">02</button>
+                <button className="seatBtn">03</button>
+                <button className="seatBtn">04</button>
+                <button className="seatBtn">05</button>
+                <button className="seatBtn">06</button>
+                <button className="seatBtn">07</button>
+                <button className="seatBtn">08</button>
+                <button className="seatBtn">09</button>
+                <button className="seatBtn">10</button>
+                <button className="seatBtn">01</button>
+                <button className="seatBtn">02</button>
+                <button className="seatBtn">03</button>
+                <button className="seatBtn">04</button>
+                <button className="seatBtn">05</button>
+                <button className="seatBtn">06</button>
+                <button className="seatBtn">07</button>
+                <button className="seatBtn">08</button>
+                <button className="seatBtn">09</button>
+                <button className="seatBtn">10</button>
+                <button className="seatBtn">01</button>
+                <button className="seatBtn">02</button>
+                <button className="seatBtn">03</button>
+                <button className="seatBtn">04</button>
+                <button className="seatBtn">05</button>
+                <button className="seatBtn">06</button>
+                <button className="seatBtn">07</button>
+                <button className="seatBtn">08</button>
+                <button className="seatBtn">09</button>
+                <button className="seatBtn">10</button>
             </article> 
             <div className="listTypeSeats">
                 <figure>
@@ -34,7 +70,7 @@ export default function Seats(){
                     <figcaption>Indisponível</figcaption>
                 </figure>
             </div>
-            <article>
+            <article className="inputs">
                 <h5>Nome do comprador:</h5>
                 <input type="text" placeholder="Digite seu nome..."/>
                 <h5>CPF do comprador:</h5>

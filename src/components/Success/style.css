@@ -39,7 +39,7 @@ h4{
     letter-spacing: 0.04em;
     color: #FFFFFF;
     border: none;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 .centerBtn{
     display: flex;
@@ -56,4 +56,16 @@ h4{
     align-content: center;
     justify-content: center;
     align-items: center;
+}
+article > span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    
+    color: #293845;
 }
