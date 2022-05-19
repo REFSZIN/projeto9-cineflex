@@ -82,6 +82,7 @@ figcaption{
     margin-left: 10px;
 }
 .seatBtn{
+    position: relative;
     height: 22px;
     width: 22px;
     background: #C3CFD9;
@@ -146,8 +147,6 @@ figcaption{
 .seatBtnSelect{
     height: 20px;
     width: 20px;
-    background: #8DD7CF;
-    border: 1px solid #1AAE9E;
     border-radius: 17px;
     border-radius: 100%;
     font-family: 'Roboto';
@@ -164,6 +163,35 @@ figcaption{
     margin-bottom: 10px;
     margin-left: 10px;
 }
+.setimg{
+    position: relative;
+    height: 22px;
+    width: 22px;
+    border-radius: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 13px;
+    display: grid;
+    align-items: end;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+    padding-right: 2px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    animation: slideInDown 1s;
+    align-content: space-around;
+    justify-content: end;
+    justify-items: stretch;
+}
+.seat{
+    z-index: -1;
+    position: absolute;
+    width: 18px;
+    height: 30px;
+}
 .seats{
     display: flex;
     flex-direction: column;
@@ -174,6 +202,7 @@ figcaption{
     padding-bottom: 130px;
 }
 .seats > h2{
+    z-index: 2;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;

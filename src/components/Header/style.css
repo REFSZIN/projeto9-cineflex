@@ -19,3 +19,15 @@ h1{
     color: #E8833A;
     animation: backInDown 1s;
 }
+header img {
+    width: 60px;
+    height: 50px;
+}
+header a{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
