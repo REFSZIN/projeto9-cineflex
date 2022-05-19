@@ -11,6 +11,9 @@ footer{
     align-items: center;
     text-align: center;
 }
+footer::-webkit-scrollbar { 
+	display: none;
+}
 .backTumb{
     margin: 14px;
     display: flex;

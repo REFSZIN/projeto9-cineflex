@@ -34,6 +34,7 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+    padding-bottom: 120px;
 }
 .date{
     font-family: 'Roboto';

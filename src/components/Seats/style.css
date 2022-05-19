@@ -67,6 +67,7 @@ input::placeholder{
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    animation: slideInDown 1s;
 }
 .listTypeSeats > figure{
     display: flex;
