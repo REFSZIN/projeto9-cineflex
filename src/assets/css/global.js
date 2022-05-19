@@ -1,6 +1,10 @@
+import { createGlobalStyle } from 'styled-components'
+export default createGlobalStyle`
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900&display=swap');
+
 /* 	
     font-family: 'Righteous', cursive;
 	font-family: 'Roboto', sans-serif; 
@@ -13,7 +17,6 @@
 	word-wrap: break-word;
 	word-break: break-all;
 }
-
 a{
     text-decoration: none;
 }
@@ -65,3 +68,4 @@ button:hover{
     filter: brightness(1.1);
     box-shadow: 1px 1px 2px 2px #aaaaaa;
 }
+`
