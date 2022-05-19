@@ -1,10 +1,15 @@
-import "./style.css"
 import { Link } from "react-router-dom";
-import Logo from "../../assets/images/logo.png"
+import Imglogo from "../../assets/images/logo.png"
+import { Head  , H1 ,Logo , Aa } from './style.js'
 export default function Header(){
     return(
-        <header>
-        <Link to='/'><img src={Logo} alt="Logo"/><h1>CINEFLEX</h1></Link>
-        </header>
+        <Head>
+            <Link to='/'>
+                <Aa>
+                    <Logo src={Imglogo} alt="Logo"/>
+                    <H1>CINEFLEX</H1>
+                </Aa>
+            </Link>
+        </Head>
     );
 };

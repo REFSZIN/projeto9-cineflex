@@ -1,5 +1,5 @@
-import Seats from "./Seats/Seats";
-import FooterSeats from "./FooterSeats/FooterSeats";
+import Seats from "../components/Seats/Seats";
+import FooterSeats from "../components/FooterSeats/FooterSeats";
 export default function Screen2(){
     return(
         <>

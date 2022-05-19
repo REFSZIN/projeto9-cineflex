@@ -1,24 +1,25 @@
-import "./style.css"
+import "./style.js"
+import {BtnHour, Days, Hoour, Date, H2 } from "./style.js"
 import { Link } from "react-router-dom"
 
 export default function Hour(){
     return(
-        <section className="Hour">
-            <h2>Selecione o horário</h2>
-            <article className="days">
-                <span className="date">Quinta-feira - 24/06/2021</span>
-                <div className="btns">
-                    <Link to='/assentos'><button className="btnHour">15:00</button></Link>
-                    <Link to='/assentos'><button className="btnHour">19:00</button></Link>
+        <Hoour>
+            <H2>Selecione o horário</H2>
+            <Days>
+                <Date>Quinta-feira - 24/06/2021</Date>
+                <div>
+                    <Link to='/assentos'><BtnHour>15:00</BtnHour></Link>
+                    <Link to='/assentos'><BtnHour>19:00</BtnHour></Link>
                 </div>
-            </article>
-            <article className="days">
-                <span className="date">Sexta-feira - 25/06/2021</span>
-                <div className="btns">
-                    <Link to='/assentos'><button className="btnHour">15:00</button></Link>
-                    <Link to='/assentos'><button className="btnHour">19:00</button></Link>
+            </Days>
+            <Days>
+                <Date>Sexta-feira - 25/06/2021</Date>
+                <div>
+                    <Link to='/assentos'><BtnHour>15:00</BtnHour></Link>
+                    <Link to='/assentos'><BtnHour>19:00</BtnHour></Link>
                 </div>
-            </article>
-        </section>
+            </Days>
+        </Hoour>
     )
 }

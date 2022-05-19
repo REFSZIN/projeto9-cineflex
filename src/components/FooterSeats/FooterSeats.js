@@ -1,14 +1,14 @@
-import "./style.css"
+import {Foooter, BackTumbSeat, H3 , FoooterSeats, TumbFooter} from "./style.js"
 import tumb1 from "../../assets/images/tumb1.png"
 export default function FooterSeats (){
     return(
-        <footer>
-            <section className="footerSeats">
-                <figure className="backTumbSeat">
-                    <img className="tumbFooter"  src={tumb1} alt="Thumbnail"/>
-                </figure>
-                <h3>Enola Holmes <br/>Quinta-feira - 15:00 </h3>
-            </section>
-        </footer>
+        <Foooter>
+            <FoooterSeats>
+                <BackTumbSeat>
+                    <TumbFooter  src={tumb1} alt="Thumbnail"/>
+                </BackTumbSeat>
+                <H3>Enola Holmes <br/>Quinta-feira - 15:00 </H3>
+            </FoooterSeats>
+        </Foooter>
     );
 };

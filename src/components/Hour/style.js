@@ -1,4 +1,21 @@
-.btnHour{
+import styled from 'styled-components';
+
+export const H2 = styled.h2`
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #293845;
+    margin-top: 40px;
+    margin-bottom: 40px;
+`;
+
+export const BtnHour = styled.button`
     width: 83px;
     height: 43px;
     background: #E8833A;
@@ -13,8 +30,9 @@
     letter-spacing: 0.02em;
     color: #FFFFFF;
     border: none;
-}
-.days{
+`;
+
+export const Days = styled.article`
     width: 100%;
     height: 80px;
     margin-bottom: 18px;
@@ -26,8 +44,9 @@
     justify-content: center;
     align-items: center;
     animation: pulse 1s;
-}
-.Hour{
+`;
+
+export const Hoour = styled.section`
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -35,8 +54,9 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 120px;
-}
-.date{
+`;
+
+export const Date = styled.span`
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -46,4 +66,4 @@
     align-items: center;
     letter-spacing: 0.02em;
     color: #293845;
-}
+`;

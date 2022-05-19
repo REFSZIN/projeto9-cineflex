@@ -1,14 +1,14 @@
-import "./style.css"
+import { Asidee } from"./style.js"
 import Hour from "../Hour/Hour";
 import Seats from "../Seats/Seats";
 import Success from "../Success/Success";
 
 export default function Aside(){
     return(
-        <aside>
+        <Asidee>
             <Hour />
             <Seats />
             <Success />
-        </aside>
+        </Asidee>
     );
 };

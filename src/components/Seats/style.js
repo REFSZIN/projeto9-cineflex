@@ -1,4 +1,6 @@
-.listSeats{
+import styled from 'styled-components';
+
+export const ListSeats = styled.article`
     width: 320px;
     display: flex;
     flex-wrap: wrap;
@@ -6,12 +8,10 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-}
-button:hover{
-    filter: brightness(1.1);
-    box-shadow: 1px 1px 2px 2px #aaaaaa;
-}
-h5{
+`;
+export const Article =styled.article``
+
+export const H5 = styled.h5`
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -20,28 +20,9 @@ h5{
     display: flex;
     align-items: center;
     color: #293845;
-}
-input{
-    width: 300px;
-    height: 45px;
-    background: #FFFFFF;
-    border: 1px solid #D5D5D5;
-    border-radius: 12px;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    
-}
-input::placeholder{
-    font-family: 'Roboto';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    color: #AFAFAF;
-}
-.btnAside{
+`;
+
+export const BtnAside = styled.button`
     width: 225px;
     height: 42px;
     background: #E8833A;
@@ -57,31 +38,9 @@ input::placeholder{
     color: #FFFFFF;
     border: none;
     margin-top: 40px;
-}
-.listTypeSeats{
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    animation: slideInDown 1s;
-}
-.listTypeSeats > figure{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: space-around;
-    flex-wrap: nowrap;
-}
-figcaption{
-    margin-right: 10px;
-    margin-left: 10px;
-}
-.seatBtn{
+`;
+
+export const SeatBtn = styled.button`
     position: relative;
     height: 22px;
     width: 22px;
@@ -102,9 +61,9 @@ figcaption{
     margin-bottom: 10px;
     margin-left: 6px;
     animation: slideInDown 1s;
-}
-.seatBtnDispo{
-    
+`;
+
+export const SeatBtnDispo = styled.button`
     height: 20px;
     width: 20px;
     background: #C3CFD9;
@@ -123,8 +82,9 @@ figcaption{
     padding-right: 7px;
     margin-bottom: 10px;
     margin-left: 10px;
-}
-.seatBtnIndispo{
+`;
+
+export const SeatBtnIndispo = styled.button`
     height: 20px;
     width: 20px;
     background: #FBE192;
@@ -144,8 +104,56 @@ figcaption{
     padding-right: 7px;
     margin-bottom: 10px;
     margin-left: 10px;
-}
-.seatBtnSelect{
+`;
+
+export const ListTypeSeats = styled.article`
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    animation: slideInDown 1s;
+`;
+
+export const Input = styled.input`
+    width: 300px;
+    height: 45px;
+    background: #FFFFFF;
+    border: 1px solid #D5D5D5;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+
+    &::placeholder{
+        font-family: 'Roboto';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        color: #AFAFAF;
+    }
+`;
+
+export const Figure = styled.figure`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+`;
+
+export const FigCaption = styled.figcaption`
+    margin-right: 10px;
+    margin-left: 10px;
+`;
+
+export const SeatBtnSelect = styled.button`
     height: 20px;
     width: 20px;
     border-radius: 17px;
@@ -163,8 +171,18 @@ figcaption{
     padding-right: 7px;
     margin-bottom: 10px;
     margin-left: 10px;
-}
-.setimg{
+`;
+
+export const CenterBtn = styled.div`
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+`;
+
+export const Setimg = styled.div`
     position: relative;
     height: 22px;
     width: 22px;
@@ -186,15 +204,17 @@ figcaption{
     align-content: space-around;
     justify-content: end;
     justify-items: stretch;
-}
-.seat{
+`;
+
+export const Seeat = styled.img`
     z-index: -1;
     position: absolute;
     left: -5px;
     width: 28px;
     height: 36px;
-}
-.seats{
+`;
+
+export const Seeats = styled.section`
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -202,8 +222,9 @@ figcaption{
     justify-content: center;
     align-items: center;
     padding-bottom: 130px;
-}
-.seats > h2{
+`;
+
+export const H2 = styled.h2`
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -216,4 +237,4 @@ figcaption{
     color: #293845;
     margin-top: 10px;
     margin-bottom: 40px;
-}
+`;

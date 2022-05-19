@@ -1,23 +1,24 @@
-.root{
-    overflow-x: hidden
-}
-main{
+import styled from 'styled-components';
+
+export const Maiin = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-}
-.main{
+`;
+
+export const Mainn = styled.section`
     text-align: center;
     display: flex;
     align-content: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-h2{
+`;
+
+export const H2 = styled.h2`
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -30,16 +31,18 @@ h2{
     color: #293845;
     margin-top: 40px;
     margin-bottom: 40px;
-}
-.listTumbs{
+`;
+
+export const ListTumbs = styled.article`
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     align-content: center;
-}
-.backTmbMain{
+`;
+
+export const BackTmbMain = styled.div`
     margin: 14px;
     display: flex;
     flex-direction: column;
@@ -53,9 +56,10 @@ h2{
     width: 149px;
     height: 206px;
     animation: zoomIn 1s;
-}
-.tumb{
+`;
+
+export const Tumb = styled.img`
     width: 129px;
     height: 193px;
     box-shadow: 1px 2px 3px 2px #c9c9c9;
-}
+`;

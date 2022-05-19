@@ -58,3 +58,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.root{
+    overflow-x: hidden
+}
+button:hover{
+    filter: brightness(1.1);
+    box-shadow: 1px 1px 2px 2px #aaaaaa;
+}

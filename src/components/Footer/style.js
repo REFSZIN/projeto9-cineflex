@@ -1,4 +1,6 @@
-footer{
+import styled from 'styled-components';
+
+export const Foooter = styled.footer`
     width: 100%;
     height: 116px;
     position: fixed;
@@ -10,11 +12,12 @@ footer{
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-footer::-webkit-scrollbar { 
-	display: none;
-}
-.backTumb{
+    &::-webkit-scrollbar {
+        display: none;
+    }
+`;
+
+export const BackTumb = styled.figure`
     margin: 14px;
     display: flex;
     flex-direction: column;
@@ -29,8 +32,9 @@ footer::-webkit-scrollbar {
     height: 89px;
     animation: fadeInLeft 1s;
     box-shadow: 1px 2px 5px 5px #aaaaaa;
-}
-h3{
+`;
+
+export const H3 = styled.h3`
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -40,13 +44,13 @@ h3{
     align-items: center;
     color: #293845;
     animation: fadeIn 1s;
+`;
 
-}
-.footerHour, .footerSeats{
+export const FooterHour = styled.section`
     display: flex;
-}
-.tumbFooter{
+`;
+
+export const TumbFooter = styled.img`
     width: 48px;
     height: 72px;
-    
-}
+`;

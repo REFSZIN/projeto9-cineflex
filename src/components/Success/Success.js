@@ -1,26 +1,27 @@
-import "./style.css"
+import "./style.js"
+import {H6, H4, BtnSuccess,Ticket, CenterBtn, Succeess, Span } from "./style.js"
 import { Link } from "react-router-dom";
 export default function Success(){
     return(
-        <section className="success">
-            <h6>Pedido feito com sucesso!</h6>
-            <section className="ticket">
+        <Succeess>
+            <H6>Pedido feito com sucesso!</H6>
+            <Ticket>
                 <article>
-                    <h4>Filme e sessão</h4>
-                    <span>Enola Holmes <br/>24/06/2021 15:00</span>
+                    <H4>Filme e sessão</H4>
+                    <Span>Enola Holmes <br/>24/06/2021 15:00</Span>
                 </article>
                 <article>
-                    <h4>Ingressos</h4>
-                    <span>Assento 15<br/>Assento 16</span>
+                    <H4>Ingressos</H4>
+                    <Span>Assento 15<br/>Assento 16</Span>
                 </article>
                 <article>
-                    <h4>Comprador</h4>
-                    <span>Nome: João da Silva Sauro<br/>CPF: 123.456.789-10</span>
+                    <H4>Comprador</H4>
+                    <Span>Nome: João da Silva Sauro<br/>CPF: 123.456.789-10</Span>
                 </article>
-            </section>
-            <div className="centerBtn">
-                <Link to='/'> <button className="btnSuccess">Voltar pra Home</button> </Link>
-            </div>
-        </section>
+            </Ticket>
+            <CenterBtn>
+                <Link to='/'> <BtnSuccess>Voltar pra Home</BtnSuccess> </Link>
+            </CenterBtn>
+        </Succeess>
     );
 };

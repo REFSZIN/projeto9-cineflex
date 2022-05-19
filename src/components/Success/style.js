@@ -1,4 +1,6 @@
-h6{
+import styled from 'styled-components';
+
+export const H6 = styled.h6`
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -11,8 +13,9 @@ h6{
     color: #247A6B;
     margin-top: 40px;
     margin-bottom: 30px;
-}
-h4{
+`;
+
+export const H4 = styled.h4`
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -23,8 +26,9 @@ h4{
     letter-spacing: 0.04em;
     color: #293845;
     margin-top: 20px;
-}
-.btnSuccess{
+`;
+
+export const BtnSuccess = styled.button`
     width: 225px;
     height: 42px;
     background: #E8833A;
@@ -40,27 +44,31 @@ h4{
     color: #FFFFFF;
     border: none;
     margin-top: 60px;
-}
-.ticket{
+`;
+
+export const Ticket = styled.section`
     animation: flipInX 1s;
-}
-.centerBtn{
+`;
+
+export const CenterBtn = styled.div`
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-}
-.success{
+`;
+
+export const Succeess = styled.section`
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
     align-items: center;
-}
-article > span {
+`;
+
+export const Span = styled.span`
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -69,6 +77,5 @@ article > span {
     display: flex;
     align-items: center;
     letter-spacing: 0.04em;
-    
     color: #293845;
-}
+`;
