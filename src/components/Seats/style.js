@@ -120,7 +120,7 @@ export const ListTypeSeats = styled.article`
 
 export const Input = styled.input`
     width: 300px;
-    height: 45px;
+    height: 40px;
     background: #FFFFFF;
     border: 1px solid #D5D5D5;
     border-radius: 12px;
@@ -198,7 +198,7 @@ export const Setimg = styled.div`
     letter-spacing: 0.04em;
     color: #000000;
     padding-right: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     margin-left: 10px;
     animation: slideInDown 1s;
     align-content: space-around;
