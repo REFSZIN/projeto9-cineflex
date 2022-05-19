@@ -208,18 +208,15 @@ export default function Seats(){
                 </div>
             </article> 
             <div className="listTypeSeats">
-                <figure>
-                <img className="seat" src={seat} alt="Seat"/>
+                <figure >
                     <button className="seatBtnSelect"></button>
                     <figcaption>Selecionado</figcaption>
                 </figure>
                 <figure>
-                <img className="seat" src={seat} alt="Seat"/>
                     <button className="seatBtnDispo"></button>
                     <figcaption>Disponível</figcaption>
                 </figure>
                 <figure>
-                <img className="seat" src={seat} alt="Seat"/>
                     <button className="seatBtnIndispo"></button>
                     <figcaption>Indisponível</figcaption>
                 </figure>

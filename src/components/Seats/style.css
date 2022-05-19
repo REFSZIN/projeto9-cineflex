@@ -100,10 +100,11 @@ figcaption{
     color: #000000;
     padding-right: 2px;
     margin-bottom: 10px;
-    margin-left: 10px;
+    margin-left: 6px;
     animation: slideInDown 1s;
 }
 .seatBtnDispo{
+    
     height: 20px;
     width: 20px;
     background: #C3CFD9;
@@ -189,8 +190,9 @@ figcaption{
 .seat{
     z-index: -1;
     position: absolute;
-    width: 18px;
-    height: 30px;
+    left: -5px;
+    width: 28px;
+    height: 36px;
 }
 .seats{
     display: flex;
@@ -202,7 +204,6 @@ figcaption{
     padding-bottom: 130px;
 }
 .seats > h2{
-    z-index: 2;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -213,6 +214,6 @@ figcaption{
     text-align: center;
     letter-spacing: 0.04em;
     color: #293845;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
