@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import Imglogo from "../../assets/images/logo.png"
-import { Head  , H1 ,Logo , Aa } from './style.js'
+import Imglogo from "../../assets/images/logo.png";
+import React from "react";
+import { Head  , H1 ,Logo , Aa } from './style.js';
 export default function Header(){
     return(
         <Head>

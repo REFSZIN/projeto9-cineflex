@@ -1,6 +1,6 @@
-import "./style.js"
-import {BtnHour, Days, Hoour, Date, H2 } from "./style.js"
-import { Link } from "react-router-dom"
+import "./style.js";
+import {BtnHour, Days, Hoour, Date, H2 } from "./style.js";
+import { Link } from "react-router-dom";
 
 export default function Hour(){
     return(
@@ -21,5 +21,5 @@ export default function Hour(){
                 </div>
             </Days>
         </Hoour>
-    )
-}
+    );
+};

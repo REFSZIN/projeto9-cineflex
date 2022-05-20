@@ -1,5 +1,6 @@
-import {Foooter, BackTumbSeat, H3 , FoooterSeats, TumbFooter} from "./style.js"
-import tumb1 from "../../assets/images/tumb1.png"
+import {Foooter, BackTumbSeat, H3 , FoooterSeats, TumbFooter} from "./style.js";
+import React from "react";
+import tumb1 from "../../assets/images/tumb1.png";
 export default function FooterSeats (){
     return(
         <Foooter>

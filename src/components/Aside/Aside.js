@@ -1,4 +1,4 @@
-import { Asidee } from"./style.js"
+import { Asidee } from"./style.js";
 import Hour from "../Hour/Hour";
 import Seats from "../Seats/Seats";
 import Success from "../Success/Success";
