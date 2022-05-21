@@ -51,6 +51,6 @@ export const FoooterSeats = styled.section`
 `;
 
 export const TumbFooter = styled.img`
-    width: 48px;
-    height: 72px;
+    width: 54px;
+    height: 80px;
 `;

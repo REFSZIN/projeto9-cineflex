@@ -5,6 +5,7 @@ export default function Load(){
     return(
         <Loadin >
             <Loaded src={loader} alt="Loader"/>
+            <Aviso>Carregando....</Aviso>
         </Loadin>
     );
 };
@@ -23,6 +24,19 @@ export const Loadin = styled.section`
 export const Loaded = styled.img`
     object-fit: cover;
     width: 320px;
-    heigth: 50vh;
-    margin: 10%;
+    heigth: 10vh;
+    margin-left: 10%;
+    margin-rigth: 10%;
+`
+export const Aviso = styled.span`
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #E8833A;
+    animation: backInDown 1s;
 `
