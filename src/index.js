@@ -18,8 +18,8 @@ function App (){
         <Header />
             <Routes>
                 <Route path="/" element={<Screen />} />
-                <Route path="/sessoes" element={<Screen1 />} />
-                <Route path="/assentos" element={<Screen2 />}/>
+                <Route path="/sessoes/:id" element={<Screen1 />} />
+                <Route path="/assentos/:idSection" element={<Screen2 />}/>
                 <Route path="/pedido" element={<Screen3 />}/>
             </Routes> 
         </BrowserRouter>

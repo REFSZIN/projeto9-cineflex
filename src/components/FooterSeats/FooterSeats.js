@@ -1,14 +1,13 @@
 import {Foooter, BackTumbSeat, H3 , FoooterSeats, TumbFooter} from "./style.js";
 import React from "react";
-import tumb1 from "../../assets/images/tumb1.png";
-export default function FooterSeats (){
+export default function FooterSeats (props){
     return(
         <Foooter>
             <FoooterSeats>
                 <BackTumbSeat>
-                    <TumbFooter  src={tumb1} alt="Thumbnail"/>
+                    <TumbFooter  src={props.thumb} alt="Thumbnail"/>
                 </BackTumbSeat>
-                <H3>Enola Holmes <br/>Quinta-feira - 15:00 </H3>
+                <H3>{props.title} <br/>{props.day} - {props.hour} </H3>
             </FoooterSeats>
         </Foooter>
     );

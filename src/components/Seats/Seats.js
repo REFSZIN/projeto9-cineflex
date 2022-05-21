@@ -1,214 +1,26 @@
 import "./style.js"
-import seat from "../../assets/images/seats.png"
+import seatImg from "../../assets/images/seats.png"
+import Load from "../Load/Load.js";
 import { Link } from "react-router-dom"
 import { ListSeats, H5, H2, BtnAside, SeatBtn, SeatBtnDispo, SeatBtnIndispo, SeatBtnSelect, ListTypeSeats, Input, Figure, FigCaption, Setimg, Seeat ,Seeats, CenterBtn, Article } from "./style.js"
-export default function Seats(){
-    
+export default function Seats(props){
+    const { seats } = props;
+    console.log(seats) 
+    if(!seats){
+        return (<Load />);
+    }
 
     return (
         <Seeats>
             <H2>Selecione o(s) assento(s)</H2>
             <ListSeats>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>01</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>02</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>03</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>04</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>05</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>06</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>07</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>08</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>09</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>10</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>01</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>02</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>03</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>04</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>05</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>06</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>07</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>08</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>09</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>10</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>01</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>02</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>03</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>04</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>05</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>06</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>07</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>08</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>09</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>10</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>01</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>02</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>03</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>04</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>05</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>06</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>07</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>08</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>09</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>10</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>01</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>02</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>03</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>04</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>05</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>06</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>07</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>08</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>09</SeatBtn>
-                </Setimg>
-                <Setimg>
-                    <Seeat src={seat} alt="Seat"/>
-                    <SeatBtn>10</SeatBtn>
-                </Setimg>
+            {seats.map((data, index) =>{
+                return(
+                <Setimg key={index}>
+                    <Seeat src={seatImg} alt="Seat"/>
+                    <SeatBtn>{data.name}</SeatBtn>
+                </Setimg>);
+            })}
             </ListSeats> 
             <ListTypeSeats>
                 <Figure >

@@ -1,25 +1,32 @@
 import "./style.js";
 import {BtnHour, Days, Hoour, Date, H2 } from "./style.js";
 import { Link } from "react-router-dom";
+import Load from "../Load/Load.js";
 
-export default function Hour(){
+export default function Hour(props){
+    const { days } = props;
+
+
+    if(!days){
+        return (<Load />);
+    }
     return(
         <Hoour>
             <H2>Selecione o horário</H2>
-            <Days>
-                <Date>Quinta-feira - 24/06/2021</Date>
-                <div>
-                    <Link to='/assentos'><BtnHour>15:00</BtnHour></Link>
-                    <Link to='/assentos'><BtnHour>19:00</BtnHour></Link>
-                </div>
-            </Days>
-            <Days>
-                <Date>Sexta-feira - 25/06/2021</Date>
-                <div>
-                    <Link to='/assentos'><BtnHour>15:00</BtnHour></Link>
-                    <Link to='/assentos'><BtnHour>19:00</BtnHour></Link>
-                </div>
-            </Days>
-        </Hoour>
-    );
-};
+            {days.map((data, index) =>{
+                return(
+                <Days key={index}>
+                    <Date> {data.weekday} - {data.date}</Date>
+                    <div>
+                        {data.showtimes.map((showtime, i ) => {
+                            return (
+                                <Link key={i} to={`/assentos/${showtime.id}`}>
+                                    <BtnHour>{showtime.name}</BtnHour>
+                                </Link>
+                            )
+                        })}
+                    </div>
+                </Days>);
+            })}
+        </Hoour>)
+        }
