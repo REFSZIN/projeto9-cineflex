@@ -65,6 +65,7 @@ table {
     overflow-x: hidden
 }
 button:hover{
+	cursor: pointer;
     filter: brightness(1.1);
     box-shadow: 1px 1px 2px 2px #aaaaaa;
 }

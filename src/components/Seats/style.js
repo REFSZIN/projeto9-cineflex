@@ -9,9 +9,9 @@ export const ListSeats = styled.article`
     justify-content: center;
     align-items: center;
 `;
-export const Article =styled.article``
+export const Article =styled.form``
 
-export const H5 = styled.h5`
+export const H5 = styled.label`
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -61,6 +61,9 @@ export const SeatBtn = styled.button`
     margin-bottom: 10px;
     margin-left: 6px;
     animation: slideInDown 1s;
+    &:hover{
+        cursor: pointer;
+    }
 `;
 
 export const SeatBtnDispo = styled.button`
@@ -82,6 +85,9 @@ export const SeatBtnDispo = styled.button`
     padding-right: 7px;
     margin-bottom: 10px;
     margin-left: 10px;
+    &:hover{
+        cursor: default;
+    }
 `;
 
 export const SeatBtnIndispo = styled.button`
@@ -104,6 +110,9 @@ export const SeatBtnIndispo = styled.button`
     padding-right: 7px;
     margin-bottom: 10px;
     margin-left: 10px;
+    &:hover{
+        cursor: default;
+    }
 `;
 
 export const ListTypeSeats = styled.article`
@@ -171,6 +180,9 @@ export const SeatBtnSelect = styled.button`
     padding-right: 7px;
     margin-bottom: 10px;
     margin-left: 10px;
+    &:hover{
+        cursor: default;
+    }
 `;
 
 export const CenterBtn = styled.div`

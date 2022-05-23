@@ -2,14 +2,16 @@ import "./style.js"
 import seatImg from "../../assets/images/seats.png"
 import Load from "../Load/Load.js";
 import { Link } from "react-router-dom"
+import { useState } from "react";
 import { ListSeats, H5, H2, BtnAside, SeatBtn, SeatBtnDispo, SeatBtnIndispo, SeatBtnSelect, ListTypeSeats, Input, Figure, FigCaption, Setimg, Seeat ,Seeats, CenterBtn, Article } from "./style.js"
 export default function Seats(props){
     const { seats } = props;
-    console.log(seats) 
+    const [cpf,setCpf] = useState('');
+    const [client,setClient] = useState('');
+
     if(!seats){
         return (<Load />);
     }
-
     return (
         <Seeats>
             <H2>Selecione o(s) assento(s)</H2>
@@ -38,13 +40,13 @@ export default function Seats(props){
             </ListTypeSeats> 
             <Article>
                 <H5>Nome do comprador:</H5>
-                <Input type="text" placeholder="Digite seu nome..."/>
+                <Input id="user" name="user" value={client} type="text" placeholder="Digite seu nome..." oninvalid="this.setCustomValidity('Você não tem Nome? 🤔')" onChange={e => setClient(e.target.value)}required/>
                 <H5>CPF do comprador:</H5>
-                <Input type="text" placeholder="Digite seu CPF..."/>
+                <Input id="cpf" name="cpf" value={cpf} onChange={e => setCpf(e.target.value)} oninvalid="this.setCustomValidity('Você não tem CPF? 🤔')" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="Digite seu CPF..." required/>
+                <CenterBtn>
+                    <Link to='/pedido'><BtnAside type="submit" >Reservar assento(s)</BtnAside></Link>
+                </CenterBtn>
             </Article>
-            <CenterBtn>
-                <Link to='/pedido'><BtnAside>Reservar assento(s)</BtnAside></Link>
-            </CenterBtn>
         </Seeats>
     )
 }

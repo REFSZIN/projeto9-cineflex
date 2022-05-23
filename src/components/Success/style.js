@@ -27,7 +27,12 @@ export const H4 = styled.h4`
     color: #293845;
     margin-top: 20px;
 `;
-
+export const Tumb = styled.img`
+margin-top: 100px;
+    width: 129px;
+    height: 193px;
+    box-shadow: 1px 2px 3px 2px #c9c9c9;
+`
 export const BtnSuccess = styled.button`
     width: 225px;
     height: 42px;

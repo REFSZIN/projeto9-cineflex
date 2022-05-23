@@ -11,7 +11,7 @@ export default function Screen2(){
     const [hour, setHour] = useState();
     const [ title, setTitle ] = useState();
     const [ thumb, setThumb ] = useState();
-
+    
     useEffect(() => {
         const promise = axios.get(`https://mock-api.driven.com.br/api/v5/cineflex/showtimes/${idSection}/seats`);
         promise.then((resposta) => {

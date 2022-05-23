@@ -13,7 +13,7 @@ export default function Load(){
 export const Loadin = styled.section`
     display: flex;
     align-content: center;
-    display padding-bottom: 120px;
+    padding-bottom: 120px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -24,9 +24,9 @@ export const Loadin = styled.section`
 export const Loaded = styled.img`
     object-fit: cover;
     width: 320px;
-    heigth: 10vh;
-    margin-left: 10%;
-    margin-rigth: 10%;
+    margin-left: 10%;   
+    margin-top: 10%;
+    height: 10vh;
 `
 export const Aviso = styled.span`
     font-family: 'Righteous';
